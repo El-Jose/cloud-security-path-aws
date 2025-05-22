@@ -13,9 +13,7 @@ Este paso SOLO se puede hacer desde la consola de AWS
 **Importancia:** al realizar este paso evitas accesos no autorizados a la cuenta root.
 
 ### 2. Crear un usuario administrador desde IAM
-´sdfasdasf
-asfsadfasdf
-asdfsadf´
+`esto es un bloque de codigo`
 
 
 * Dirigete a IAM > Users > Add user
