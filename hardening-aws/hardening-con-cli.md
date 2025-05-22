@@ -13,7 +13,14 @@ Este paso SOLO se puede hacer desde la consola de AWS
 **Importancia:** al realizar este paso evitas accesos no autorizados a la cuenta root.
 
 ### 2. Crear un usuario administrador desde IAM
-`esto es un bloque de codigo`
+```
+# Crear el usuario
+aws iam create-user --user-name admin-user-cli
+# Crear el grupo si no existe
+aws iam create-group --group-name Administrators
+# Adjuntar politica de administrador 
+aws iam attach-group-policy --group-name Administrators --policy-arn arn:aws:iam::aws:policy/AdministratorAccess
+```
 
 
 * Dirigete a IAM > Users > Add user
