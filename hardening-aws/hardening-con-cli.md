@@ -20,6 +20,9 @@ aws iam create-user --user-name admin-user-cli
 aws iam create-group --group-name Administrators
 # Adjuntar politica de administrador 
 aws iam attach-group-policy --group-name Administrators --policy-arn arn:aws:iam::aws:policy/AdministratorAccess
+# Agregar usuario al agrupo
+aws iam add-user-to-group --user-name admin-user-cli --group-name Administrators
+
 ```
 
 
